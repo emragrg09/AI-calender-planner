@@ -27,9 +27,9 @@ To connect Google Calendar, you need to create OAuth credentials in the Google C
    - Click **+ Create Credentials** and select **OAuth client ID**.
    - Set **Application type** to **Web application**.
    - Under **Authorized JavaScript origins**, add:
-     `http://localhost:3000`
+     `http://localhost:3001`
    - Under **Authorized redirect URIs**, add:
-     `http://localhost:3000/api/auth/google/callback`
+     `http://localhost:3001/api/auth/google/callback`
    - Click **Create** and copy your **Client ID** and **Client Secret**.
 
 ### 3. Configure Environment Variables
@@ -39,7 +39,7 @@ Create a file named `.env.local` in the root of the workspace and fill in the co
 # Google OAuth Configuration
 GOOGLE_CLIENT_ID=your-google-client-id-here
 GOOGLE_CLIENT_SECRET=your-google-client-secret-here
-GOOGLE_REDIRECT_URI=http://localhost:3000/api/auth/google/callback
+GOOGLE_REDIRECT_URI=http://localhost:3001/api/auth/google/callback
 
 # Security Configuration
 # Generate a secure 32-character key for encryption (e.g., openssl rand -base64 32)
@@ -55,7 +55,7 @@ Start the Next.js development server:
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) to view the application.
+Open [http://localhost:3001](http://localhost:3001) to view the application.
 
 ---
 
